@@ -14,4 +14,16 @@ def drukujplansze(pole):
     print(f"{pole['1']}|{pole['2']}|{pole['3']}")
     print("-+-+-")
 
-drukujplansze(planszadogry)
+def gra():
+    gracz='x'
+    licznik=0
+    for i in range(1,10):
+        drukujplansze(planszadogry)
+        move=input(f'To jest ruch, {gracz}. Wybierz gdzie chcesz wstawić znak')
+        if planszadogry[move] =='':
+            planszadogry[move] = gracz
+            licznik += 1
+        else:
+            print('Miejsce jest już zajęte\nWstaw swój znakgdzieś indziej')
+            continue
+        if licznik >= 5:
