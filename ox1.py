@@ -27,3 +27,30 @@ def gra():
             print('Miejsce jest już zajęte\nWstaw swój znakgdzieś indziej')
             continue
         if licznik >= 5:
+            if planszadogry['7']==planszadogry['8']==planszadogry['9']!='':
+                drukujplansze(planszadogry)
+                print('\nKoniecgry!\n')
+                print(f'wygrał gracz: {gracz}')
+                break
+        elif planszadogry['4']==planszadogry['5']==planszadogry['6']!='':
+                drukujplansze(planszadogry)
+                print('\nKoniecgry!\n')
+                print(f'wygrał gracz: {gracz}')
+                break
+        elif planszadogry['1']==planszadogry['2']==planszadogry['3']!='':
+                drukujplansze(planszadogry)
+                print('\nKoniecgry!\n')
+                print(f'wygrał gracz: {gracz}')
+                break
+        elif planszadogry['7']==planszadogry['5']==planszadogry['3']!='':
+                drukujplansze(planszadogry)
+                print('\nKoniecgry!\n')
+                print(f'wygrał gracz: {gracz}')
+                break
+        elif planszadogry['1']==planszadogry['5']==planszadogry['9']!='':
+                drukujplansze(planszadogry)
+                print('\nKoniecgry!\n')
+                print(f'wygrał gracz: {gracz}')
+                break
+        if licznik==9:
+            print('\nkoniec gry!!!\n')
