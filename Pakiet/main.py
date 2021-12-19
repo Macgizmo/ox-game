@@ -16,3 +16,13 @@ x2 = datetime.date(2021,12,19)
 x4 = x2-x1
 print(x4)
 # %%
+import datetime
+x1 = datetime.datetime(2021,12,31,1,1,12)
+x2 = datetime.datetime(2021,12,19,3,5,9)
+x5 = (x1-x2)
+print(x5)
+# %%
+import datetime
+x7=datetime.datetime(2021,12,19)
+print(x7 + datetime.timedelta(days=75))
+# %%
